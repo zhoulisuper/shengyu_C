@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
-import App from "./App";
-import Demo from "./views/Demo";
+import App from "component/App";
+import Demo from "page/Demo";
+import Demo2 from "page/Demo2";
 
-class AppRouter extends Component {
+class Router extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -15,10 +16,11 @@ class AppRouter extends Component {
         <Switch>
           <Route exact path="/" component={App} />
           <Route path="/demo" component={Demo} />
+          <Route path="/demo2" component={Demo2} />
         </Switch>
       </HashRouter>
     );
   }
 }
 
-export default AppRouter;
+export default Router;

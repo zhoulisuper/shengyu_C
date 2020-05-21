@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Tabs, Badge } from "antd-mobile";
-import "./App.css";
+import "style/App.css";
+import { Link } from "react-router-dom";
+import store from "store/app";
 
 function App() {
   const tabs = [
@@ -32,7 +34,7 @@ function App() {
             backgroundColor: "#fff",
           }}
         >
-          Content of first tab
+          <Link to="/demo">demo</Link>
         </div>
         <div
           style={{
@@ -43,7 +45,7 @@ function App() {
             backgroundColor: "#fff",
           }}
         >
-          Content of second tab
+          {store.loading}
         </div>
         <div
           style={{
