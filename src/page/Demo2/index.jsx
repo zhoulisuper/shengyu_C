@@ -10,7 +10,7 @@ class Demo2 extends React.Component {
         <NavBar icon={<Icon type="ellipsis" />} onLeftClick={this.onOpenChange}>
           Basic
         </NavBar>
-        <Link to="/demo">demo</Link>
+        <Link to="/home">home</Link>
       </div>
     );
   }

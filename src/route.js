@@ -2,23 +2,23 @@ import Loadable from "react-loadable";
 import loading from "./component/Loading";
 
 // 默认路由页面
-const Demo = Loadable({
-  loader: () => import(/* webpackChunkName: "home" */ "./page/Demo"),
+const TabNav = Loadable({
+  loader: () => import(/* webpackChunkName: "home" */ "./page/TabNav"),
   loading,
 });
 
 const routes = [
   {
-    key: "demo",
+    key: "home",
     path: "/",
     exact: true,
-    component: Demo,
+    component: TabNav,
   },
   {
-    key: "demo",
-    path: "/demo",
+    key: "home",
+    path: "/home",
     exact: true,
-    component: Demo,
+    component: TabNav,
   },
   {
     key: "demo2",

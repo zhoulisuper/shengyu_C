@@ -123,6 +123,7 @@ module.exports = function (webpackEnv) {
             javascriptEnabled: true,
             modifyVars: {
               "brand-primary": "#ffaa00",
+              "font-size-base": "12",
             },
           },
         },
