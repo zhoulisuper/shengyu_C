@@ -1,7 +1,7 @@
 import { observable, action } from "mobx";
 
 class App {
-  @observable loading = "shdjfshdj";
+  @observable loading = true;
   @action
   setLoading = (v) => {
     this.loading = v;
