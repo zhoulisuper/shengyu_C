@@ -1,5 +1,9 @@
 import React from "react";
 import { TabBar } from "antd-mobile";
+import Cart from "page/Cart";
+import UserCenter from "page/UserCenter";
+import Category from "page/Category";
+import Home from "page/Home";
 
 class Demo extends React.Component {
   constructor(props) {
@@ -10,52 +14,9 @@ class Demo extends React.Component {
     };
   }
 
-  renderContent = (pageText) => {
-    return (
-      <div
-        style={{
-          backgroundColor: "white",
-          height: "100%",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ paddingTop: 60 }}>
-          Clicked “{pageText}” tab， show “{pageText}” information
-        </div>
-        <p
-          style={{
-            display: "block",
-            marginTop: 40,
-            marginBottom: 20,
-            color: "#108ee9",
-          }}
-          onClick={(e) => {
-            e.preventDefault();
-            this.setState({
-              hidden: !this.state.hidden,
-            });
-          }}
-        >
-          Click to show/hide tab-bar
-        </p>
-      </div>
-    );
-  };
-
   render() {
     return (
       <div style={{ position: "fixed", height: "100%", width: "100%", top: 0 }}>
-        {/* <NavBar
-          mode="light"
-          icon={<Icon type="left" />}
-          onLeftClick={() => console.log("onLeftClick")}
-          rightContent={[
-            <Icon key="0" type="search" style={{ marginRight: "16px" }} />,
-            <Icon key="1" type="ellipsis" />,
-          ]}
-        >
-          首页
-        </NavBar> */}
         <TabBar
           unselectedTintColor="#949494"
           tintColor="#33A3F4"
@@ -94,7 +55,7 @@ class Demo extends React.Component {
             }}
             data-seed="logId"
           >
-            {this.renderContent("首页")}
+            <Home />
           </TabBar.Item>
           <TabBar.Item
             icon={
@@ -128,7 +89,7 @@ class Demo extends React.Component {
             }}
             data-seed="logId1"
           >
-            {this.renderContent("分类")}
+            <Category />
           </TabBar.Item>
           <TabBar.Item
             icon={
@@ -161,7 +122,7 @@ class Demo extends React.Component {
               });
             }}
           >
-            {this.renderContent("购物车")}
+            <Cart />
           </TabBar.Item>
           <TabBar.Item
             icon={{
@@ -181,7 +142,7 @@ class Demo extends React.Component {
               });
             }}
           >
-            {this.renderContent("我的")}
+            <UserCenter />
           </TabBar.Item>
         </TabBar>
       </div>
