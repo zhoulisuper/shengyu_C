@@ -9,8 +9,11 @@ class Demo extends React.Component {
       <div className="App">
         <header className={s.container}>
           <Button type="primary" inline size="small">
-            <Link to="/demo2">demo2</Link>
+            按钮
           </Button>
+          <div style={{ height: "100px" }}>
+            <Link to="/demo2">demo2</Link>
+          </div>
         </header>
       </div>
     );

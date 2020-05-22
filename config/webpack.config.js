@@ -22,8 +22,8 @@ const getClientEnvironment = require("./env");
 const ModuleNotFoundPlugin = require("react-dev-utils/ModuleNotFoundPlugin");
 const ForkTsCheckerWebpackPlugin = require("react-dev-utils/ForkTsCheckerWebpackPlugin");
 const typescriptFormatter = require("react-dev-utils/typescriptFormatter");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-  .BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+//   .BundleAnalyzerPlugin;
 const postcssNormalize = require("postcss-normalize");
 
 const appPackageJson = require(paths.appPackageJson);
@@ -121,19 +121,10 @@ module.exports = function (webpackEnv) {
           sourceMap: isEnvProduction && shouldUseSourceMap,
           lessOptions: {
             javascriptEnabled: true,
+            modifyVars: {
+              "brand-primary": "#ffaa00",
+            },
           },
-
-          // modifyVars: {
-          //   "primary-color": "#ffaa00",
-          //   "link-color": "#ffaa00",
-          //   "text-color": "#666666",
-          //   "label-color": "#666666",
-          //   "input-color": "#666666",
-          //   "table-padding-vertical": "10px",
-          //   "table-padding-horizontal": "10px",
-          //   "font-size-base": "12px",
-          //   "screen-sm": "0",
-          // },
         },
       });
     } else if (preProcessor) {
@@ -681,7 +672,7 @@ module.exports = function (webpackEnv) {
             new RegExp("/[^/?]+\\.[^/]+$"),
           ],
         }),
-      new BundleAnalyzerPlugin(),
+      // new BundleAnalyzerPlugin(),
       // TypeScript type checking
       useTypeScript &&
         new ForkTsCheckerWebpackPlugin({
