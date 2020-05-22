@@ -1,26 +1,34 @@
-import React, { Component } from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
-import App from "component/App";
-import Demo from "page/Demo";
-import Demo2 from "page/Demo2";
+import Loadable from "react-loadable";
+import loading from "./component/Loading";
 
-class Router extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+// 默认路由页面
+const Demo = Loadable({
+  loader: () => import(/* webpackChunkName: "home" */ "./page/Demo"),
+  loading,
+});
 
-  render() {
-    return (
-      <HashRouter>
-        <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/demo" component={Demo} />
-          <Route path="/demo2" component={Demo2} />
-        </Switch>
-      </HashRouter>
-    );
-  }
-}
+const routes = [
+  {
+    key: "demo",
+    path: "/",
+    exact: true,
+    component: Demo,
+  },
+  {
+    key: "demo",
+    path: "/demo",
+    exact: true,
+    component: Demo,
+  },
+  {
+    key: "demo2",
+    exact: true,
+    component: Loadable({
+      loader: () => import("./page/Demo2"),
+      loading,
+    }),
+    path: "/demo2",
+  },
+];
 
-export default Router;
+export default routes;
