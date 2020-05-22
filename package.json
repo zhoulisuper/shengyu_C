@@ -97,7 +97,8 @@
     "less-loader": "^6.1.0",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
-    "react-app-rewired": "^2.1.6"
+    "react-app-rewired": "^2.1.6",
+    "webpack-bundle-analyzer": "^3.8.0"
   },
   "jest": {
     "roots": [
@@ -152,6 +153,13 @@
   "babel": {
     "plugins": [
       [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": true
+        }
+      ],
+      [
         "@babel/plugin-proposal-decorators",
         {
           "legacy": true
@@ -160,8 +168,7 @@
       "transform-class-properties"
     ],
     "presets": [
-      "react-app",
-      "@babel/preset-env"
+      "react-app"
     ]
   }
 }
