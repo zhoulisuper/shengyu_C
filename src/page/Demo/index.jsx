@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "antd-mobile";
-import s from "./style.m.less";
+import s from "./style.module.less";
 
 const App = () => {
   return (
