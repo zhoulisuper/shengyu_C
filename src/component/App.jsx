@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Tabs, Badge } from "antd-mobile";
-import "style/App.css";
+import "style/App.less";
 import { Link } from "react-router-dom";
 import store from "store/app";
 
@@ -55,6 +55,7 @@ function App() {
             height: "150px",
             backgroundColor: "#fff",
           }}
+          className="App-link"
         >
           Content of third tab
         </div>
