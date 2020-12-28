@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+    </defs>
+    <g id="symbol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="后台框架" transform="translate(-1725.000000, -15.000000)">
+            <g id="分组-19" transform="translate(1726.000000, 16.000000)">
+                <g id="分组-2">
+                    <g id="位图">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#FFFFFF" stroke-width="2" fill="#D8D8D8" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="头像" transform="translate(10.000000, 8.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <path d="M6.35644911,8.09276918 C6.35644911,3.63011845 9.78502502,0 14,0 C18.2149475,0 21.6435234,3.6300894 21.6435234,8.09276918 C21.6435234,12.5557104 18.2149475,16.185364 14,16.185364 C9.78502502,16.185364 6.35644911,12.5557104 6.35644911,8.09276918 Z M3.11976911e-15,28.9808917 C0.164568351,27.0240602 1.0518434,20.0901653 7.87159207,16.3766018 C9.56302103,17.7823535 11.6879203,18.6287739 14.0000274,18.6287739 C16.3247852,18.6287739 18.4611826,17.7737533 20.1571395,16.3536196 C27.0063606,20.0515226 27.8331814,26.9368091 28,28.9806883 C27.9593313,29.0223527 0.0404217409,28.9841167 0,28.9808917 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

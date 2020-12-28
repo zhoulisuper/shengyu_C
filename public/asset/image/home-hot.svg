@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="27px" viewBox="0 0 38 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FE8282" offset="0%"></stop>
+            <stop stop-color="#FC4B4B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页" transform="translate(-174.000000, -562.000000)">
+            <g id="Group-2" transform="translate(174.000000, 562.000000)">
+                <path d="M4,-3.84581256e-12 L34,-3.9181991e-12 C36.209139,-3.91860491e-12 38,1.790861 38,4 L38,16.3773585 C38,18.5864975 36.209139,20.3773585 34,20.3773585 L7.37760762,20.3773585 C6.18813182,20.3773585 5.06035945,20.906737 4.30041525,21.8217984 L0,27 L0,18.3396226 L0,4 C-2.705415e-16,1.790861 1.790861,-3.84540675e-12 4,-3.84581256e-12 Z" id="Rectangle-8" fill="url(#linearGradient-1)"></path>
+                <text id="HOT" font-family="PingFangSC-Semibold, PingFang SC" font-size="14" font-weight="500" fill="#FFFFFF">
+                    <tspan x="4" y="15">HOT</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

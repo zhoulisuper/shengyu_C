@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>首页跟多按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页跟多按钮" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="跟多按钮" transform="translate(1.000000, 1.000000)">
+            <path d="M6.70710678,8.70710678 L10.5428932,12.5428932 C10.9334175,12.9334175 11.5665825,12.9334175 11.9571068,12.5428932 L15.7928932,8.70710678 C16.1834175,8.31658249 16.1834175,7.68341751 15.7928932,7.29289322 C15.6053568,7.10535684 15.3510029,7 15.0857864,7 L7.41421356,7 C6.86192881,7 6.41421356,7.44771525 6.41421356,8 C6.41421356,8.26521649 6.5195704,8.5195704 6.70710678,8.70710678 Z" id="Path-5" fill="#BBBBBB" transform="translate(11.250000, 10.125000) scale(-1, 1) rotate(90.000000) translate(-11.250000, -10.125000) "></path>
+            <circle id="Oval-3" stroke="#BBBBBB" cx="10" cy="10" r="10"></circle>
+        </g>
+    </g>
+</svg>
